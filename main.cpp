@@ -40,9 +40,13 @@ bool LoadFile(const std::string& filename, std::vector<Monster>& monsters)
 		ifs.open(filename);
 		
 		char ch;
+		std::string line;
 
-		while (ifs.get(ch))
+		std::getline(ifs, line);
+		while (!ifs.eof())
 		{
+			std::_Get_asan_aligned_after(ifs,)
+			
 			/*std::cout << ch;*/
 		}
 
